@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Login</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: rgba(95,158,160);
+    }
+    form{
+        background-color: #fff;
+        max-width: 500px;
+        width: 70%;
+        padding: 20px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    form h3{
+        text-align: center;
+        color: #5f7c8a;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    form input[type=text],
+    form input[type=password]{
+        width: 100%;
+        height: 45px;
+        border: 1px solid #ccc;
+        padding-left: 10px;
+        margin: 10px 0;
+    }
+    form input[type=submit]{
+        width: 100%;
+        height: 40px;
+        cursor: pointer;
+        background-color: #5f7c8a;
+        color: white;
+        border: 0;
+        border-radius: 20px;
+        transition: 1s;
+    }
+    form input[type=submit]:hover{
+        background-color: aqua;
+    }
+    form input[type=text]:focus{
+        outline: 0;
+    }
+    form input[type=password]:focus{
+        outline: 0;
+    }
+    .imagem-form-whats{
+        position: absolute;
+        left: 33%;
+        top: 70%;
+        width: 22px;
+        
+    }
+    .imagem-form-insta{
+        position: absolute;
+        left: 43%;
+        top: 70%;
+        width: 22px;
+    }
+    .imagem-form-face{
+        position: absolute;
+        left: 54%;
+        top: 70%;
+        width: 13px;
+    }
+    .imagem-form-tiktok{
+        position: absolute;
+        left: 65%;
+        top: 70%;
+        width: 19px;
+    }
+
+</style>
+<body>
+    <form>
+        <h3>Entrar em contato</h3>
+        <input id="email" type="text" name="email" placeholder="Seu email..." />
+        <input type="password" name="senha" placeholder="Sua senha..."/>
+        <input type="submit" name="acao" value="Enviar"/>
+    </form>
+    <!--<a href="https://api.whatsapp.com/send?phone=5598984176402&text=Ol%C3%A1%20Felipe%2C%20tudo%20bem%3F" target="_blank">
+    <img class="imagem-form-whats" src="img/whatsapp.svg"></a>
+    <a href="https://www.instagram.com/felipe_carneirox/" target="_blank">
+    <img class="imagem-form-insta" src="img/instagram.svg"></a>
+    <a href="https://www.facebook.com/felipe.carneiro.3000" target="_blank">
+    <img class="imagem-form-face" src="img/facebook-f.svg"></a>
+    <a href="https://www.tiktok.com/@felipecarneirox" target="_blank">
+    <img class="imagem-form-tiktok" src="img/tiktok.svg"></a>-->
+    
+    <script>
+       var email = document.getElementById('email');
+       email.addEventListener('focus',()=>{
+       email.style.borderColor = "#A45f6a";});
+    </script>
+</body>
+</html>
